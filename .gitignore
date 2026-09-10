@@ -1,0 +1,32 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# Source/evidence material and run artifacts: never public by default
+knowledge/evidence/
+knowledge/drafts/
+knowledge/quarantine/
+knowledge/verification/
+runs/
+.cache/
+.browser*/
+browser-profiles/
+
+# Local deployment / ops metadata
+.vercel/
+.DS_Store
+*.log
